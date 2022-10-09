@@ -7,23 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponentComponent implements OnInit {
 
+  //Diese variable soll die gewählte Person speichern
+  selectedPerson = {};
+
   //Dieses Array soll in HTML ausgegeben werden
   personen = [
     {
       name: "Manfred",
       nachname: "Müller",
+      alter:"70",
+      ort:"Gera",
     },
     {
       name: "Sabine",
       nachname: "Schmidt",
+      alter:"42",
+      ort:"Leipzig",
     },
     {
       name: "Max",
       nachname: "Mustermann",
+      alter:"23",
+      ort:"Dresden",
     },
     {
       name: "Maxi",
       nachname: "Musterfrau",
+      alter:"10",
+      ort:"Erfurt",
     }
   ]
   
@@ -32,5 +43,6 @@ export class ListComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 
 }
