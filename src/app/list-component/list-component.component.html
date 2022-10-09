@@ -7,3 +7,9 @@
         <button (click)="selectPerson(person)">auswählen</button>
     </li>
 </ul>
+
+<div *ngIf="selectedPerson">
+    <h3>{{selectedPerson.name +' '+ selectedPerson.nachname}}</h3>
+    <p>Alter: {{selectedPerson.alter}}</p>
+    <p>Wohnort: {{selectedPerson.ort}}</p>
+</div>

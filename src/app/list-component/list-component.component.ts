@@ -9,7 +9,7 @@ import { Person } from '../person';
 export class ListComponentComponent implements OnInit {
 
   //Diese variable soll die gewählte Person speichern
-  selectedPerson = {};
+  selectedPerson:Person | undefined;
 
   //Dieses Array soll in HTML ausgegeben werden
   personen:Person[] = [
@@ -44,6 +44,11 @@ export class ListComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  selectPerson(person:Person){
+
+    this.selectedPerson = person;
+
+  }
 
 
 }
