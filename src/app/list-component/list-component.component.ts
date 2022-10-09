@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Person } from '../person';
 
 @Component({
   selector: 'app-list-component',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponentComponent implements OnInit {
 
   //Dieses Array soll in HTML ausgegeben werden
-  personen = [
+  personen:Person[] = [
     {
       name: "Manfred",
       nachname: "Müller",
