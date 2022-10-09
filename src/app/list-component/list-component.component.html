@@ -1,4 +1,5 @@
 <p>Personen:</p>
 <ul>
     <!--Jede Person in <li>-->
+    <li *ngFor="let person of personen">{{person.nachname + ', ' + person.name}}</li>
 </ul>
