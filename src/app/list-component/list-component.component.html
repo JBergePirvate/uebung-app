@@ -4,6 +4,6 @@
     <li *ngFor="let person of personen">
         {{person.nachname + ', ' + person.name}}
         <!--Knopf soll person auswählen und alle Informationen ausgeben-->
-        <button>auswählen</button>
+        <button (click)="selectPerson(person)">auswählen</button>
     </li>
 </ul>
