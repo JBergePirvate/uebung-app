@@ -1,3 +1,3 @@
-# Uebung2 start
-ausgangsdateien für die zweite Übung
+# Uebung2 ende
+Musterlösung für die zweite Übung
 
