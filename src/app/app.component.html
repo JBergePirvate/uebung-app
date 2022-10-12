@@ -1,16 +1,12 @@
 <div>
-  <h1>Übung 3</h1>
-  <p>Aufgabe: Bei Knopfdruck sollen alle Informationen über eine Person extra ausgegeben werden (Name, Nachname, Alter, Ort)</p>
-  <div>
-    <button (click)="hinweisAnzeigen(1)" *ngIf="!hinweis1"> Hinweis 1 anzeigen</button>
-    <p *ngIf="hinweis1">Eine Funktion soll die gewählte Person in eine Variable speichern.</p>
-  </div>
-  <div>
-    <button (click)="hinweisAnzeigen(2)" *ngIf="!hinweis2"> Hinweis 2 anzeigen</button>
-    <p *ngIf="hinweis2"> Mit *ngIf wird die Person ausgegeben, wenn die Variable einen Wert hat</p>
-  </div>
+  <h1>Übung 3: Routing</h1>
+  <p>Aufgabe:</p>
+  <p>route zur "list-component" komponente definieren</p>
+  <p>Link auf Hauptseite anlegen, welcher zu der Route wechselt</p>
 </div>
 <div>
   <hr>
-  <app-list-component></app-list-component>
+  <!--link goes here-->
+  <a routerLink="/personen">zu den Personen</a>
+  <router-outlet></router-outlet>
 </div>
