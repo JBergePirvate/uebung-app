@@ -1,3 +1,3 @@
-# Uebung2 ende
-Musterlösung für die zweite Übung
+# Uebung3 ende
+Musterlösung für die dritte Übung
 
