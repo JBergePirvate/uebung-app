@@ -1,3 +1,3 @@
-# Uebung3 ende
-Musterlösung für die dritte Übung
+# Uebung3 start
+Ausgangsdateien für die erste Übung
 
