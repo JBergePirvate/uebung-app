@@ -1,5 +1,15 @@
 <p>Personen:</p>
 <ul>
     <!--Jede Person in <li>-->
-    <li *ngFor="let person of personen">{{person.nachname + ', ' + person.name}}</li>
+    <li *ngFor="let person of personen">
+        {{person.nachname + ', ' + person.name}}
+        <!--Knopf soll person auswählen und alle Informationen ausgeben-->
+        <button (click)="selectPerson(person)">auswählen</button>
+    </li>
 </ul>
+
+<div *ngIf="selectedPerson">
+    <h3>{{selectedPerson.name +' '+ selectedPerson.nachname}}</h3>
+    <p>Alter: {{selectedPerson.alter}}</p>
+    <p>Wohnort: {{selectedPerson.ort}}</p>
+</div>
